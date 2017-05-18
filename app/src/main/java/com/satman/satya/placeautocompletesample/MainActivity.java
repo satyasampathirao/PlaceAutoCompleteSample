@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvsat;
 
+    // good morning satya
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         tvsat = (TextView) findViewById(R.id.tvsat);
-
-
 
 
 
