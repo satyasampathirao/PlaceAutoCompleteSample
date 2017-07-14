@@ -52,9 +52,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
 
 
-
-
-
     }
 
 
