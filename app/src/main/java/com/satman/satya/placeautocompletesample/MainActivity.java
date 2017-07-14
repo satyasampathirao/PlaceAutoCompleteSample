@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvsat;
 
-    // good morning satya
+    // good morning satya. how r u
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,17 +40,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
         tvsat = (TextView) findViewById(R.id.tvsat);
 
 
 
         PlaceAutocompleteFragment places= (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
+
+        
         places.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
             public void onPlaceSelected(Place place) {
 
                 Toast.makeText(getApplicationContext(),place.getName(),Toast.LENGTH_SHORT).show();
+
                 tvsat.setText(place.getName());
             }
 
